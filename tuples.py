@@ -1,5 +1,7 @@
 # Tuples
 # Tuples are similar to lists. However they are immutable 
+# Tuples are immutable
+
 
 # Creating a variable of type Tuple
 t = (1,2,3)
