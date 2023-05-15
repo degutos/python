@@ -1,7 +1,5 @@
 # Tuples
 # Tuples are similar to lists. However they are immutable 
-# Tuples are immutable
-
 
 # Creating a variable of type Tuple
 t = (1,2,3)
@@ -27,11 +25,23 @@ print(t[0])
 
 print(t[-1])
 
-
+# Reasigning a tuple t
 t = ('a','b', 'a')
 
+# Counting how many times we have variable a and b
 print(t.count('a'))
 print(t.count('b'))
 
+# Showing in which position the variable a and b appers 
 print(t.index('a'))
 print(t.index('b'))
+
+
+
+
+
+
+
+
+
+
