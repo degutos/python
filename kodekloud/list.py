@@ -148,3 +148,268 @@ for letter in 'KodeKloud':
     if letter == 'u':
         continue
     print('Letter : ' + letter)
+
+# Lets iterate through a list of lists, when the list has 3 elements we can print out each item from the list
+list1 = [[1,2,3,2,5],[4,5,6,7],[8,9,10]]
+for i in list1:
+      if len(i)==3:
+        print(i)
+
+# Lets add a new item to the last position on our list
+list1 = [10, 11, 12, 13, 14]
+list1.append(15)
+print(list1)
+
+# Lets print the first element [0] in the list
+list1 = [10, 11, 12, 13, 14]
+print(list1[0])
+
+# Lets print a list in reverse order
+list1=[4,0,7,1]
+print(list1[::-1])
+
+# Lets print from second item in the list [1] to the end
+letters = ["A", "B", "C", "D", "E"]
+print(letters[1:])
+
+# Lets print from second item in the list [1] to 3rd item in the list, this will print 2nd and 3rd item in the list 
+letters = ["A", "B", "C", "D", "E"]
+print(letters[1:3])
+
+# Lets print index and each item in the list
+list1 = [1, 2, 3, 4]
+for index, j in enumerate(list1):
+     print(index, j)
+
+
+
+list1 = [10, 11, 12, 13, 14]
+print(list1[::1])
+
+# Lets iterate through the list of list, check if number of elements in the list is 4, if so we print out each element in the list
+list1 = [[1,2,3,2,5],[4,5,6,7],[8,9,10]]
+for i in list1:
+      if len(i)==4:
+        print(i)
+
+
+list1 = ["A", "B", "C", "D", "E"]
+print(list1[1:3]) # print 2nd and 3rd element in the list
+print(list1[:]) # print all elements in the list
+print(list1[:-1]) # print from beginning to the end, but not printing the last element
+print(list1[1:-1]) # print all elements from the list except the first and last one.
+first_two = list1[1:3] # assigning slice list to a new variable, in this case if we change the list we won't change the new variable
+print(first_two)
+list1.insert(1,3) # lets add a new element to the list in the position [1] 
+print(list1) # when we print the elements from the list we see the new element added, which is the number '3'
+print(first_two) # here we print variable first_two which was not changed by the time when we added a new element. 
+
+
+list1 = ["A", "B", "C", "D", "E"]
+del list1[0] # lets delete first element in the list. This will affect into the list elements. 
+print(list1)
+
+del list1[:]
+print(list1) # lets print list1 and notice we have deleted all elements in the list.
+
+# lets print from beginning to the end, printing only 2 and 2
+my_list = [0, 1, 2, 3, 4]
+print(my_list[::2])
+
+
+# lets print from beginning to the end showing 3 in 3 
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(my_list[::3])
+
+# lets print from end to beginning
+my_list = [0, 1, 2, 3, 4]
+print(my_list[::-1])
+
+# lets create a list append a element to the list, slice from 2nd element [1] to the end
+my_list = [0, 1, 2, 3, 4]
+my_list.append("python")
+b = my_list[1:]
+print(b)
+
+# lets create a list with elements, other list of elements and different type of elements, then we print 3rc element [2] to 4th element
+list1 = [1, 66, "python", [11, 55, "cat"], [ ], 2.22, True]
+print(list1[2:4])
+
+
+# lets print from beginning to the 4th element
+list1 = [1, 66, "python", [11, 55, "cat"], [ ], 2.22, True]
+print(list1[0:4])
+    
+# lets create a list add an element to the end, and print from 3rd element [2] until the end
+my_list = [0, 1, 2, 3, 4]
+my_list.append("python")
+print(my_list[2:])
+
+# lets print last element
+my_list = [0, 1, 2, 3, 4]
+print(my_list[-1])
+
+# check if a value is in the list of elements
+list1 = ["A", "B", "C", "D", "E"]
+print("B" in list1)
+print("z" in list1)
+
+# lets create a list, assign new variable to a list, change value of a element in the list, you will notice that the new variable has a new value changed
+list1=[3,4,6,1,2]
+list2=list1
+list1[1]=9
+print(list2)
+
+# lets replace a few elements in the list
+list1 = [0, 3, 4, 1, 2]
+list1[2:5]=[8,9]
+print(list1)
+
+# lets replace two values
+countries = ["USA", "Canada", "India"]
+countries[0], countries[1] = countries[1], countries[0]
+print(countries)
+
+# lets replace a value element in the list and print new list values
+list1=[3,4,6,1,2]
+list2=list1
+list1[0]=9
+print(list2)
+
+# lets print 3rd element (2)
+my_list = [0, 1, 2, 3, 4]
+print(my_list.index(2))
+my_list = [0, 3, 4, 1, 2]
+print(my_list.index(1))
+
+# let create a nested list - a matrix list
+classroom = [
+    ["Sam", "Max", "Joe", "Anne"],
+    ["Sofie", "Lisa", "Tim", "Sacha"],
+    ["Clare", "Sara", "Leo", "Kim"],
+    ["Zoe", "Guy", "Zoe", "Eva"],
+]
+# lets print out "Sara" name
+student = classroom[2][1]
+print(student)
+
+
+
+# lets create a list of nested list, then create a second list with empty elements, 
+matrix = [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[2])
+
+a = []
+for i in range(2):
+    a.append([])
+    for j in range(2):
+        a[i].append(j)
+
+print(a)
+
+
+
+
+matrix = [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[0])
+
+
+
+countries = [['Egypt', 'USA', 'India'], ['Dubai', 'America', 'Spain'], ['London', 'England', 'France']]
+countries2  = [country for sublist in countries for country in sublist if len(country) < 4]
+print(countries2)
+
+
+
+
+matrix = [[j for j in range(3)] for i in range(3)] 
+print(matrix[2][1])
+
+
+
+a = []
+for i in range(5):
+    a.append([])
+    for j in range(5):
+        a[i].append(j)
+
+print(a[3][3])
+
+
+
+
+
+matrix = [[j for j in range(4)] for i in range(4)] 
+print(matrix[3][1])
+
+
+
+a = []
+for i in range(5):
+    a.append([])
+    for j in range(5):
+        a[i].append(j)
+
+print(a[2][3])
+
+
+
+
+
+countries = [['Egypt', 'USA', 'India'],
+       ['Dubai', 'America', 'Spain'], 
+       ['London', 'England', 'France']]
+countries2  = [country for sublist in countries for country in 
+                       sublist if len(country) < 6]
+print(countries2)
+
+
+
+
+# lets create a 3D matrix list
+
+
+school = [
+    [  # Block 1
+        ["Alice", "Bob", "Charlie", "Diana", "Evan", "Fiona"],
+        ["George", "Hannah", "Ian", "Jack", "Kara", "Liam"],
+        ["Mona", "Nate", "Olivia", "Paul", "Quinn", "Rachel"],
+        ["Sam", "Tina", "Uma", "Victor", "Wendy", "Xander"]
+    ],
+    [  # Block 2
+        ["Yara", "Zane", "Aiden", "Bella", "Caleb", "Dana"],
+        ["Eli", "Faith", "Gavin", "Hailey", "Isaac", "Jenna"],
+        ["Kevin", "Lila", "Miles", "Nora", "Omar", "Piper"],
+        ["Quincy", "Riley", "Sasha", "Tyler", "Ursula", "Vince"]
+    ],
+    [  # Block 3
+        ["Will", "Xena", "Yosef", "Zara", "Abby", "Ben"],
+        ["Cara", "Derek", "Elsa", "Finn", "Gia", "Harry"],
+        ["Ivy", "Jake", "Kayla", "Leo", "Maya", "Noah"],
+        ["Owen", "Paige", "Quinn", "Rose", "Sean", "Tara"]
+    ],
+    [  # Block 4
+        ["Uma", "Vera", "Walt", "Ximena", "Yuri", "Zeke"],
+        ["Amber", "Blake", "Cleo", "Dean", "Ella", "Fred"],
+        ["Gina", "Hugo", "Isla", "Jon", "Kate", "Lars"],
+        ["Mila", "Nico", "Opal", "Pete", "Queenie", "Ray"]
+    ]
+]
+
+# lets print "Derek" name
+print(school[2][1][1])
+
